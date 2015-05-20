@@ -28,13 +28,13 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-examples-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-excelant-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-ooxml-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-ooxml-schemas-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/poi-scratchpad-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_45/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/mysql-connector-java-5.1.35-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-examples-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-excelant-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-ooxml-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-ooxml-schemas-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/poi-scratchpad-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_40/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

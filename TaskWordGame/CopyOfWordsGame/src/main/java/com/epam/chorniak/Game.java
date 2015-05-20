@@ -1,5 +1,8 @@
 package com.epam.chorniak;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -13,9 +16,16 @@ public class Game {
 
 	private static final Logger LOG = Logger.getLogger(Game.class);
 
-	private Scanner scan = new Scanner(System.in);
+	private BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 
 	private List<User> users;
+	
+	public List<User> getUsers() {
+		return users;
+	}
+
+	
+
 	private List<String> cities;
 	private Set<String> usedCities;
 	private String answerWord;
@@ -33,7 +43,12 @@ public class Game {
 	}
 
 	public void start() {
-		init();
+		try {
+			init();
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		LOG.info("Start of the game!");
 		while (true) {
 			    for (User user : users) {
@@ -42,7 +57,7 @@ public class Game {
 					System.out.println(user.getName() + " says: ");
 					String enteredCity = null;
 					try {
-						enteredCity = scan.nextLine();
+						enteredCity = scan.readLine();
 					} catch (Exception e) {
 						correct = true;
 						
@@ -81,19 +96,24 @@ public class Game {
 	}
 
 	public void end() {
-		scan.close();
+		try {
+			scan.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Game over!");
 	}
 
-	public void init() {
+	public void init() throws Exception {
 		LOG.info("Initialization of game");
 		answerWord = cities.get(new Random().nextInt(cities.size()));
 		LOG.info("Random city has been chosed: " + answerWord);
 		System.out.println("Enter number of users: ");
-		Integer numOfUsers = Integer.parseInt(scan.nextLine());
+		Integer numOfUsers = Integer.parseInt(scan.readLine());
 		for (int i = 0; i < numOfUsers; i++) {
 			System.out.println("Enter name of " + (i + 1) + " user: ");
-			String name = scan.nextLine();
+			String name = scan.readLine();
 			users.add(new User(name));
 		}
 		LOG.info("Users has been created!");
